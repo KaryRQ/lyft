@@ -1,3 +1,376 @@
-/*
- * Estilos de tu proyecto
- */
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*Con esto se evitará que salga el scroll horizontal*/
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.text-uppercase, h1, h5 {
+  text-transform: uppercase;
+}
+
+.float-left, #first-section2 {
+  float: left;
+}
+
+.float-right, .fs-one, .amplify-your-ride {
+  float: right;
+}
+
+/*Diseño de la barra de navegación fija*/
+
+nav.fixed-menu {
+  position: fixed;
+  padding: 30px;
+  margin: 10px 30px;
+  z-index: 1100;
+}
+
+.menu-item {
+  margin: 0 15px;
+}
+
+.logo {
+  width: 63px;
+  height: 40px;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: middle;
+}
+
+.background-menu {
+  background-color: rgba(44, 18, 68, .5);
+  width: 100%;
+  height: 100px;
+  z-index: 1050;
+  position: fixed;
+}
+
+.right-menu-items {
+  box-sizing: content-box;
+  text-align: right;
+  color: #fff;
+  vertical-align: top;
+  font-size: 19px;
+  font-weight: normal;
+  position: relative;
+  left: 150%;
+}
+
+/*botón de log in en la barra de navegación*/
+
+a.log-in {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+a.menu-item:hover {
+  color: #FF00BF;
+  text-decoration: none;
+}
+
+/*Diseño de primera sección*/
+
+header#first-section {
+  height: 1174px;
+  background: linear-gradient(#691B84, #681C82, #691B84, #2B1E66);
+}
+
+#first-section img.gif {
+  width: 1350px;
+  height: 740px;
+  background-image: linear-gradient(to left rgb(110, 38, 139), rgba(110, 38, 139, .5));
+  position: relative;
+  bottom: 110px;
+}
+
+#first-section2 {
+  color: #fff;
+  line-height: 1.4;
+  width: 35%;
+  height: 35%;
+  position: relative;
+  left: 130px;
+  bottom: 100px;
+  display: inline-block;
+}
+
+#first-section2>p {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #352384;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h5 {
+  font-weight: 500;
+}
+
+/*Diseño de imagen de celular*/
+
+.phone {
+  display: inline-block;
+  width: 40%;
+  height: 40%;
+  position: relative;
+  left: 250px;
+  bottom: 160px;
+}
+
+/*Diseño de formulario de inscripción*/
+
+aside#sign-up {
+  width: 561px;
+  height: 421px;
+  background-color: #FFF;
+  z-index: 900;
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+div.su-container {
+  padding: 65px;
+}
+
+/*Sección del número teléfonico*/
+
+.ph-number {
+  border: none;
+  border-bottom: .3px solid #000;
+  width: 450px;
+  padding: 10px 0 10px 0;
+}
+
+input.message {
+  padding-bottom: 215px;
+}
+
+div.links-top {
+  margin: 30px 0 30px 0;
+}
+
+.pink-button {
+  background: #FF00BF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin-right: 15px;
+}
+
+span {
+  color: #FF00BF;
+}
+
+p.little {
+  font-size: 9px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*Diseño de grid para colocar los videos*/
+
+#grid-container {
+  display: grid;
+  grid-template-rows: 3;
+  grid-template-rows: 500px 500px 500px;
+  width: 100%;
+}
+
+/*Definición de atributos para las filas 1 y 3 de grid*/
+
+.video-1 {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-columns: 455px auto;
+}
+
+/*Definición de segunda fila de grid*/
+
+.video-2 {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-columns: auto 455px;
+}
+
+/*Diseño del texto que va en la otra columna de
+grid*/
+
+.texto {
+  margin: 30px 40px;
+}
+
+.texto>h2 {
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.texto>h3 {
+  font-weight: bold;
+}
+
+.texto>p {
+  margin-top: 20px;
+}
+
+/*Diseño de footer*/
+
+footer {
+  display: block;
+  background-color: #333447;
+  position: relative;
+  height: 500px;
+}
+
+section.columns {
+  position: relative;
+  left: 9%;
+  top: 35px;
+}
+
+h3 {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+/*Diseño de las columnas del footer*/
+
+footer>section.columns>ul {
+  display: inline-block;
+  width: 150px;
+  margin-left: 100px;
+  text-align: left;
+  line-height: 40px;
+}
+
+footer>.columns>ul>li.first {
+  margin-top: 20px;
+}
+
+footer>.columns>ul>li {
+  list-style: none;
+  color: white;
+  font-weight: 100;
+}
+
+/*Efecto de los links*/
+
+li a:hover {
+  color: #FF00BF;
+  text-decoration: underline;
+}
+
+.fourth-column {
+  position: relative;
+  top: 20px;
+  margin-left: 50px;
+}
+
+li>a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Logo de empresas de descarga de la app*/
+
+.icon_apple {
+  padding-top: 15px;
+  width: 75%;
+}
+
+.icon_google {
+  width: 75%;
+  height: auto;
+  padding-top: 15px;
+}
+
+.icon_microsoft {
+  width: 75%;
+  height: auto;
+  padding-top: 15px;
+}
+
+.division_line {
+  position: relative;
+  left: 1%;
+  top: 30px;
+  border: 1px solid white;
+  width: 650px;
+  margin-left: 360px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.icons-terms {
+  position: relative;
+  left: 10%
+}
+
+/*Iconos de redes sociales*/
+
+.social_media_icons {
+  display: inline-block;
+  color: white;
+  padding: 5% 0 3% 2%;
+  margin: 0;
+  position: relative;
+  left: 38%;
+  top: 30px;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-facebook, .icon-instagram, .icon-twitter {
+  position: relative;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 50px;
+  padding: 8px;
+  text-align: center;
+}
+
+footer>p {
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+p.copyright {
+  position: relative;
+  left: 0%;
+  top: 30px;
+  text-align: center;
+}

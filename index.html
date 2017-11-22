@@ -1,1 +1,155 @@
-<!-- Agrega aquí la estructura HTML de tu sitio web -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lyft</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/fonts/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,600,700" rel="stylesheet">
+
+  <body>
+    <section id="main-container">
+      <!--Barra de navegación la cual deberá ser fija-->
+      <div class="background-menu"></div>
+      <nav class="fixed-menu">
+        <div class="float-left">
+          <img class="logo" src="assets/images/logo-white.png" alt="Lyft logo">
+        </div>
+        <div class="float-right right-menu-items">
+          <a class="menu-item">Drive</a>
+          <a class="menu-item">Explore</a>
+          <a class="menu-item">Help</a>
+          <a class="menu-item log-in">Log-in</a>
+        </div>
+      </nav>
+      <!--Primera sección la cual contiene la imagen de fondo-->
+      <header id="first-section">
+        <section class="fs-one">
+          <img class="gif" src="assets/images/hero.gif" alt="">
+        </section>
+        <!--Este es el formulario de inscripción donde se debe
+        ingresar el número teléfonico -->
+        <aside id="sign-up">
+          <div class="su-container">
+            <h1>Turn Miles <br> into money</h1>
+            <h5>Sign up to drive with Lyft</h5><br>
+            <input type="number" class="ph-number" placeholder="Phone number">
+            <div class="links-top">
+              <a class="pink-button" href="#">Become a driver</a> <a href="#">Sign up to ride</a>
+            </div>
+            <p class="little">Already applied? <a href="#"><span>Check the status of your application here.</span></a> </p>
+            <p class="little">Earn money for inviting friends to drive. <a href="#"><span>Learn more</span></a></p>
+          </div>
+        </aside>
+        <!--En esta sección se da a conocer información de la empresa-->
+        <section id="first-section2">
+          <h2>A RIDE IN MINUTES</h2><br>
+          <p>Request a ride and you’ll be on your way in minutes. Request. Ride. Repeat.</p><br>
+          <br>
+          <h2>SERIOUS ABOUT SAFETY</h2><br>From knowing the color of your driver’s car to our 24/7 Trust & Safety Team, we got you.</p><br>
+          <br>
+          <h2>HAPPY DRIVERS.</h2>
+          <h2>HAPPY DRIVERS.</h2><br>
+          <p>Ride with us and you’ll see why 9 out of 10 rides end with five stars.</p>
+        </section>
+        <!--Esta es la imagen del celular que aparece al lado de la información-->
+        <img class="phone" src="assets/images/phone.png" alt="Smartphone con app Lyft">
+      </header>
+      <!--En esta clase se insertaran los videos en un grid-->
+      <main class="videos">
+        <div id="grid-container">
+          <!--Esta será la primera fila del grid donde iran el
+          primer videoal lado del texto correspondiente-->
+          <div class="video-1">
+            <div class="texto">
+              <h2>WATCH</h2>
+              <h3>AMPLIFY YOUR RIDE</h3>
+              <p>Lyft's new emblem.Amp, is the secret to smooth pickups.Lighting up Dashboards nationwide, the device makes it easy for passengers and drivers to find each other</p>
+            </div>
+            <div class="video-yt">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fLSmUWOYpKw" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <!--Esta será la segunda fila del grid donde iran el
+          primer video al lado del texto correspondiente-->
+          <div class="video-2">
+            <div class="video-yt">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/V7j8Aqxmbs8" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="texto">
+              <h2>WATCH</h2>
+              <h3>JUNE</h3>
+              <p>In an animated short film by Academy Award-winner John Kahrs, a lonely widow in historic South Chicago is empowered to start sharing the ride- and sharing her life,too</p>
+            </div>
+          </div>
+          <!--Esta será la tercer fila del grid donde iran el
+          primer video al lado del texto correspondiente, esta clase
+        se repite y solo se cambia el link del video-->
+          <div class="video-1">
+            <div class="texto">
+              <h2>WATCH</h2>
+              <h3>A GOOD THING GOING</h3>
+              <p>Launching on TV and online."Ride on the Bright Side" shows how Lyft continues to prioritize happy drivers, short ETAs, and safety</p>
+            </div>
+            <div class="video-yt">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xj2VWLV0xCU" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!--Esta seccion pertenecerá al footer-->
+      <footer>
+        <!--El footer se mostrará en una lista-->
+        <section class="columns">
+          <ul class="first-column">
+            <!--Esta es la primera columna el footer-->
+            <li>
+              <h3>LOG IN</h3></li>
+            <li class="first"><a href="#">Help</a></li>
+            <li><a href="#">Cities</a></li>
+            <li><a href="#">Airports</a></li>
+            <li><a href="#">Fare Estimate</a></li>
+          </ul>
+          <ul class="second-column">
+            <!--Esta es la segunda columna el footer-->
+            <li>
+              <h3>PARTNER</h3></li>
+            <li class="first"><a href="#">Partnerships</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Ambassadors</a></li>
+            <li><a href="#">Developers</a></li>
+          </ul>
+          <ul class="third-column">
+            <!--Esta es la tercera columna el footer-->
+            <li>
+              <h3>LEARN</h3></li>
+            <li class="first"><a href="#">Safety</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+          <!--En esta parte se colocaran las imagenes
+          de los formatos donde se puede descargar la app-->
+          <ul class="fourth-column">
+            <li><a href="#"><img src="assets/images/apple-store.svg" class="icon_apple"></a></li>
+            <li><a href="#"><img src="assets/images/google-play.png" class="icon_google"></a></li>
+            <li><a href="#"><img src="assets/images/microsoft.png" class="icon_microsoft"></a></li>
+          </ul>
+        </section>
+        <!--Estos serán los iconos de las redes sociales
+      que tiene la empresa-->
+        <div class="social_media_icons">
+          <span class="icon-facebook"></span>
+          <span class="icon-instagram"></span>
+          <span class="icon-twitter"></span>
+        </div>
+        <div class="division_line">
+        </div>
+        <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Lyft, Inc. TermsPrivacy</p>
+      </footer>
+  </body>
+
+</html>
