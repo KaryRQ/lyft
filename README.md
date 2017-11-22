@@ -18,4 +18,4 @@ En este proyecto se usaran diferenetes herramientas que serviran para realizar u
 5. EL último punto es colocar un footer el cual deberá contener 4 columnas, las 3 priomeras contendrán texto y la última contendrá los logotipos de descarag de  la app
 
 
-![Lyft Website](docs/fullpage.png)
+![Lyft ](docs/fullpage.png)
